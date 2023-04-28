@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Describe this page." />
+    <title>Project2</title>
+    <link rel="stylesheet" href="../stylesheets/custom.css">
+  </head>
+  <body>
+    
+  <audio id ="btnAudio1">
+    <source src = "button-09.mp3" type ="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>  
+  <audio id ="btnAudio2">
+    <source src = "button-2.mp3" type ="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id ="s1">
+    <source src = "sound1.mp3" type ="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id ="s2">
+    <source src = "sound2.mp3" type ="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id ="s3">
+    <source src = "sound3.mp3" type ="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div id = "container">
+    <video id="remoteVideo" autoplay width="800px" height="600px"></video>
+    <canvas id="canvas" width="800px" height="600px"> </canvas>
+    <video id="localVideo" autoplay muted width="20%"></video>
+  </div>
+  
+
+  <div id="btns">
+    <button class = "button" id="btn-client1">Connect as Client1</button>
+    <button class = "button" id="btn-client2">Connect as Client2</button>
+    <button class ="button" id="btn-call">Call</button>
+    
+  </div>
+
+  <div id = "btns2">
+    <button onclick="startup()" class ="button" id="btn-draw">Draw</button> 
+    <button onclick="clearCanvas()" class ="button" id="btn-clear">Clear</button> 
+    <button onclick="makeNoise()" class ="button" id="btn-clear">Get Baby's Attention</button> 
+  </div>
+  
+  
+  <img id ="duck-img" src="../pages/sketches/duck.png" alt="Duck">
+  </body>
+
+  <!-- Scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+  <script src="../scripts/tut6.js"></script>
+</html>
